@@ -110,6 +110,15 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
         row-gap: 40px;
     }
+    .meet{
+        font-size: 20px;
+        padding: 0;
+        padding-top: 130px;
+    }
+    .meet p:last-child{
+        font-size: 15px;
+        text-align: center;
+    }
     
 
 }

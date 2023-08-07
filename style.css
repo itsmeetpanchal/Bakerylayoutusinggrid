@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .mainbackgroundimg {
@@ -54,18 +55,24 @@
     height: 90%;
     /* background-attachment: fixed; */
     /* overflow: hidden; */
-    /* animation: slider1 5s linear infinite; */
+    position: relative;
+}
+.meet{
+    position: absolute;
+    left: 0%;
+    top: 2%;
+    font-size: 40px;
+    text-align: center;
+    padding: 220px;
+}
+.meet p{
+    margin: 30px;
+}
+.meet p:last-child{
+    font-size: 22px;
+    text-align: center;
 }
 
-@keyframes slider1 {
-    to {
-        transform: scale(1.1);
-    }
-
-    from {
-        transform: scale(1);
-    }
-}
 
 .svjtop {
     background: url(photos/down.png);
@@ -96,9 +103,11 @@
     text-decoration: none;
 }
 
-.svjul1 li {
+.svjul1 li{
     margin: 17px;
     color: black;
+    padding: 7px;
+    border-radius: 20px;
 }
 
 .logo1 {
@@ -210,6 +219,20 @@ p .hotdealprice {
     border-radius: 50px;
     margin: 13px auto;
     font-weight: bold;
+    transition: .3s;
+}
+.angle{
+    font-size: 18px;
+    transition: .3s;
+    transform: translate(5px,0px);
+}
+.addhotdilbtn:hover .angle{
+    transform: translate(13px,0px);
+   
+}
+.addhotdilbtn:hover {
+    box-shadow: 0 0 8px black;
+   
 }
 
 .hotdealtext a {
@@ -541,9 +564,10 @@ p del {
     background-position: center;
 }
 
+
 .cakescart{
     height: 40px;
-    width: 160px;
+    width: 170px;
     display: grid;
     place-items: center;
     color: white;
@@ -611,11 +635,30 @@ margin-top: 15px;
 .readmoreinbaker{
     background: lightcoral;
     padding: 20px;
-    /* padding-left: 40px; */
-    width: 140px;
+    text-align: center;
+    display: flex;
+    width: 160px;
     font-weight: bold;
     margin-top: 50px;
     border-radius: 30px;
+}
+.angle{
+    font-size: 18px;
+    transition: .3s;
+    transform: translate(5px,0px);
+}
+.readmoreinbaker:hover .angle{
+    transform: translate(13px,0px);
+   
+}
+.readmoreinbaker:hover {
+    box-shadow: 0 0 8px black;
+   
+}
+
+.hotdealtext a {
+    text-decoration: none;
+
 }
 
 
@@ -655,10 +698,28 @@ p span{
 .blogimg1btn1{
     padding: 20px;
     background: lightcoral;
-    border-radius: 20px;
-    width: 140px;
+    border-radius: 50px;
+    width: 160px;
     margin-top: 40px;
     font-weight: bold;
+}
+.angle{
+    font-size: 18px;
+    transition: .3s;
+    transform: translate(5px,0px);
+}
+.blogimg1btn1:hover .angle{
+    transform: translate(13px,0px);
+   
+}
+.blogimg1btn1:hover {
+    box-shadow: 0 0 8px black;
+   
+}
+
+.hotdealtext a {
+    text-decoration: none;
+
 }
 .blogimgdiv{
     /* border: 2px solid red; */
@@ -731,7 +792,6 @@ p span{
     background: url(photos/1-157x157.png);
     background-repeat: no-repeat;
 }
-
 
 .contect{
     background: rgba(0, 0, 255, 0.388);
@@ -841,4 +901,83 @@ p span{
 }
 .footerinfo4 p:last-child{
     margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+.svjul1 .w{
+    margin: 17px;
+    color: black;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+}
+.v{
+    width: 110px;
+}
+.svjul1 .w:hover{
+    border: 2px solid lightcoral;
+}
+.v ul{
+    display: block;
+    width: 240px;
+    opacity: 0;
+    visibility: hidden;
+    /* display: none; */
+    transition: .1s;
+}
+.w:hover .productinfo{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0px, -15px);
+}
+
+
+.productinfo{
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    /* border: 2px solid blue; */
+    list-style: none;
+    padding: 0px;
+    background: white;
+    /* z-index: 1; */
+}
+.productinfo li{
+    width: 270px;
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0px 50px 0px 50px;
+    /* font-size: 20px; */
+    transition: .3s;
+    border: none;
+    position: relative;
+
+}
+.m{
+    position: absolute;
+    width: 0px;
+    border: 1px solid red;
+    /* top: 22px; */
+    margin-top: 9px;
+    left: 10px;
+    visibility: hidden;
+    transition: .5s;
+}
+.productinfo li:hover{
+    color: lightcoral;
+    padding-left: 60px;
+}
+.t:hover .m{
+    width: 20px;
+    visibility: visible;
 }
